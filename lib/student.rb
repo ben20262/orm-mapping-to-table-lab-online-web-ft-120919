@@ -40,11 +40,10 @@ class Student
   end
 
   def self.create(hash)
-    puts hash
-    hash.each_pair do |name, grade|
-      student = Student.new(name, grade)
-      student.save
-      student
-    end
+    name = hash[:name]
+    grade = hash[:grade]
+    student = Student.new(name, grade)
+    student.save
+    student
   end
 end
