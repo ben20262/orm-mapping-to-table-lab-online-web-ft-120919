@@ -44,6 +44,7 @@ class Student
     hash.each_pair do |name, grade|
       student = Student.new(name, grade)
       student.save
-    student
+      student
+    end
   end
 end
